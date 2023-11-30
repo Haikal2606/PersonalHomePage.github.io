@@ -1,0 +1,76 @@
+body {
+    background-color: #081b29;
+}
+
+h1 {
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+}
+
+h5 {
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+}
+
+p {
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+  }
+
+  .gallery .card {
+      margin: 10px;
+      width: 300px;
+      background-color:darkslategrey;
+      border: 1px solid darkslategrey;
+      border-radius: 5px;
+      box-shadow: 0 0 10px turquoise;
+      opacity: 0;
+      animation: slideRight 1s ease forwards;
+    }
+
+
+  .gallery .card img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  @keyframes slideTop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity:1;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity:1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity:1;
+    }
+}
+

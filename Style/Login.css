@@ -1,0 +1,39 @@
+*, html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+}
+
+.login-form {
+    width: 350px;
+    padding: 20px;
+    background:darkslategrey;
+    border-radius: 15px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    box-shadow: 0 0 10px turquoise;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity:1;
+    }
+}
+
+

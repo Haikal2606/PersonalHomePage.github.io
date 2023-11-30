@@ -1,0 +1,424 @@
+*,html,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    color: #ededed;
+}
+
+Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: darkslategrey;
+}
+
+.Logo {
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 900;
+    cursor: default;
+    opacity: 0;
+    animation:slideRight 1s ease forwards;
+}
+
+.Navbar a {
+    display: inline-block;
+    font-size: 20px;
+    padding: 3px 5px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 5px;
+    transition: .3s;
+    border: 2px solid turquoise;
+    border-radius: 10px;
+    background: turquoise;
+    animation: slideTop .5s ease forwards;
+}
+
+.Navbar a:hover {
+    background: turquoise;
+    color: #fff;
+    box-shadow: 0 0 20px turquoise;
+}
+
+.Home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: #081b29;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.Home img {
+    width:375px;
+    height:375px;
+    max-width: 100%;
+    float: right;
+    border: 1px solid black;
+    border-radius: 50px;
+    box-shadow: 0 0 30px turquoise;
+
+}
+
+.Home-Content {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 600px;
+    text-align: left;
+}
+
+.Home-Content h3 {
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.Home-Content h3:nth-of-type(2) {
+    margin-bottom: 30px;
+}
+.Home-Content h3 span {
+    color: turquoise;
+}
+
+.Home-Content h1 {
+    color: white;
+    font-size: 56px;
+    font-weight: 600;
+    margin: -3px 0;
+    opacity: 0;
+    animation:slideRight 1s ease forwards;
+    animation-delay: .1s;
+}
+
+.Home-Content p {
+    color: white;
+    font-size: 20px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .1s;
+}
+
+.Home-Icon a {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 40px;
+   height: 40px;
+   background: transparent;
+   border: 2px solid turquoise;
+   border-radius: 50%;
+   font-size: 20px;
+   color: turquoise;
+   text-decoration: none;
+   margin: 30px 15px 30px 0;
+   transition: .5s ease;
+   opacity: 0;
+   animation: slideLeft 1s ease forwards;
+   animation-delay: .1s;
+}
+
+.Home-Icon a:hover {
+    background:turquoise;
+    color: black;
+    box-shadow: 0 0 20px turquoise;
+}
+
+.Btn-Box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: turquoise;
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .2s;
+}
+
+.Btn-Box:Hover {
+    background:turquoise;
+    color: black;
+    box-shadow: 0 0 20px turquoise;
+}
+
+.About {
+    background:#081b29;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.About-Img {
+    padding-bottom: 20%;
+    max-width: 630px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.About-Img img {
+    width:375px;
+    height:375px;
+    max-width: 100%;
+    float: right;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+    box-shadow: 0 0 30px turquoise;
+}
+
+.About-Text h2 {
+    color: white;
+    font-size: 60px;
+}
+
+.About-Text span {
+    color: turquoise;
+}
+
+.About-Text h4 {
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+    color: white;
+}
+
+.About-Text p {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+    color: white;
+}
+
+.sub-title {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+.sub-title span {
+    color: turquoise;
+}
+
+.technicalskills {
+    margin-top: 100px;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.skill {
+    margin: 20px auto;
+    width: 80%;
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  .skill p {
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 0;
+  }
+  
+  .skill-bar {
+    height: 25px;
+    border-radius: 5px;
+    background-color: #ddd;
+    font-weight: bold;
+    animation: progress 1.5s ease-out forwards;
+  }
+  
+  .html {
+    width: 95%; 
+    background-color: turquoise;
+  }
+  
+  .css {
+    width: 90%; 
+    background-color: turquoise;
+  }
+  
+  .javascript {
+    width: 80%; 
+    background-color: turquoise;
+  }
+
+  .php {
+    width: 75%;
+    background-color: turquoise;
+  }
+
+  .reactjs {
+    width:80%; 
+    background-color: turquoise;
+  }
+
+  .creativity {
+    width:80%; 
+    background-color: turquoise;
+
+  }
+
+  .communication {
+    width:75%; 
+    background-color: turquoise;
+  }
+
+  .problemsolving {
+    width:85%; 
+    background-color: turquoise;
+  }
+
+  .teamwork {
+    width:95%; 
+    background-color: turquoise;
+  }
+
+  
+  .profesionalskills {
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+  }
+
+  .container {
+    width: 400px;
+    background-color: #081b29;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px turquoise;
+  }
+
+  .sub-contact {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    color: white;
+    font-weight: bold;
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid darkslategrey;
+    background-color: darkslategrey;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  footer {
+    background-color: darkslategrey;
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+
+  
+
+
+  @keyframes progress {
+    from {
+      width: 0;
+    }
+  }
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity:1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity:1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity:1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity:1;
+    }
+}
+

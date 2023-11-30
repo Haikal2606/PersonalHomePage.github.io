@@ -1,0 +1,26 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: darkslategrey;
+    border: 1px solid darkslategrey;
+    border-radius: 15px;
+    box-shadow: 0 0 10px turquoise;
+    padding: 12px 28px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity:1;
+    }
+}
